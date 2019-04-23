@@ -1,8 +1,6 @@
 'use strict'
 require ('custom-env').env(true)
 
-console.log(process.env.API_URL)
-
 const fastify = require('fastify')({ logger: true })
 
 fastify.register(require('fastify-cors'), {
